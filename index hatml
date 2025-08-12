@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Planeta Celular — Reparaciones, Crédito y Mayoreo</title>
+  <meta name="description" content="Planeta Celular: Reparaciones exprés, venta de celulares a crédito y mayoreo de recargas y accesorios en Zamora, Michoacán." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#121825; --text:#e5e7eb; --muted:#9ca3af;
+      --brand:#22c55e; --brand-2:#87f7a8; --accent:#60a5fa;
+      --max:1120px; --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box} body{margin:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit; text-decoration:none} img{max-width:100%; display:block}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 16px}
+    .btn{display:inline-block; padding:12px 18px; border-radius:12px; background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#04130a; font-weight:800; box-shadow:var(--shadow)}
+    .btn-outline{border:1px solid #263246; padding:11px 18px; border-radius:12px; color:var(--text)}
+    header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(180%) blur(8px); background:rgba(11,15,20,.7); border-bottom:1px solid #1f2937}
+    nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+    nav ul{display:flex; gap:18px; list-style:none; margin:0; padding:0}
+    .hero{padding:72px 0 46px; background:radial-gradient(1200px 500px at 70% -20%,rgba(96,165,250,.25),transparent), radial-gradient(900px 400px at -10% -30%,rgba(34,197,94,.25),transparent)}
+    .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:28px; align-items:center}
+    h1{font-size:clamp(30px,5vw,48px); line-height:1.1; margin:0 0 12px; font-weight:800}
+    .lead{font-size:18px; color:var(--muted); margin:0 0 22px}
+    .card{background:var(--card); border:1px solid #243045; border-radius:var(--radius); box-shadow:var(--shadow)}
+    .hero .card{padding:14px}
+    .section{padding:56px 0}
+    .section h2{font-size:28px; margin:0 0 10px}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .card-inner{padding:18px}
+    .muted{color:var(--muted)}
+    .feature{display:flex; gap:12px; align-items:flex-start; margin:10px 0}
+    .bullet{width:10px; height:10px; border-radius:50%; background:var(--brand); margin-top:8px}
+    .pricing{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .price-card{padding:20px}
+    .price-card h3{margin:0 0 8px}
+    .price{font-size:28px; font-weight:800}
+    .contact{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+    .input{width:100%; background:#0f1625; border:1px solid #263246; color:var(--text); border-radius:12px; padding:12px 14px}
+    textarea.input{min-height:120px; resize:vertical}
+    footer{padding:28px 0; border-top:1px solid #1f2937; color:#9aa1ad; font-size:14px}
+    .pill{display:inline-flex; align-items:center; gap:8px; border:1px solid #263246; border-radius:999px; padding:6px 10px; color:var(--muted); font-size:12px}
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .pricing{grid-template-columns:1fr}
+      .contact{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="wrap">
+      <nav>
+        <div style="display:flex; align-items:center; gap:10px; font-weight:800;">
+          <span>📱 Planeta Celular</span>
+        </div>
+        <ul>
+          <li><a href="#reparaciones">Reparaciones</a></li>
+          <li><a href="#credito">Crédito</a></li>
+          <li><a href="#mayoreo">Mayoreo</a></li>
+          <li><a href="#contacto" class="btn">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="pill">Reparaciones • Crédito • Mayoreo</span>
+        <h1>Soluciones móviles que sí resuelven</h1>
+        <p class="lead">Reparamos tu celular, te ayudamos a estrenar con pagos accesibles y surtimos a negocios con recargas y accesorios de alta rotación.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn" href="#reparaciones">Agendar reparación</a>
+          <a class="btn-outline" href="#contacto">WhatsApp</a>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop" alt="Celulares en exhibición"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPARACIONES (PRINCIPAL) -->
+  <section id="reparaciones" class="section">
+    <div class="wrap">
+      <h2>Reparaciones que devuelven la vida a tu equipo</h2>
+      <p class="muted">Diagnóstico rápido y soluciones claras para que sigas conectado sin perder tiempo.</p>
+      <div class="card card-inner">
+        <div class="feature"><div class="bullet"></div><div><strong>Cambio de pantalla y batería</strong> — nitidez y autonomía como nuevas.</div></div>
+        <div class="feature"><div class="bullet"></div><div><strong>Puertos, micrófonos y cámaras</strong> — piezas y ensamble precisos.</div></div>
+        <div class="feature"><div class="bullet"></div><div><strong>Software y rendimiento</strong> — limpieza, actualización y optimización.</div></div>
+        <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn" href="#contacto">Quiero cotizar mi reparación</a>
+          <a class="btn-outline" href="#contacto">Escríbenos por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRÉDITO -->
+  <section id="credito" class="section">
+    <div class="wrap">
+      <h2>Estrena hoy con pagos accesibles</h2>
+      <p class="muted">Opciones de financiamiento pensadas para todos los presupuestos. Llévate tu equipo y paga de forma flexible.</p>
+      <div class="grid-3">
+        <div class="card card-inner">
+          <h3>Evaluación en minutos</h3>
+          <p class="muted">Proceso directo, sin vueltas innecesarias.</p>
+        </div>
+        <div class="card card-inner">
+          <h3>Modelos para cada bolsillo</h3>
+          <p class="muted">Desde gama de entrada hasta equipos más potentes.</p>
+        </div>
+        <div class="card card-inner">
+          <h3>Pagos claros</h3>
+          <p class="muted">Calendario transparente y comunicación por WhatsApp.</p>
+        </div>
+      </div>
+      <div style="margin-top:14px">
+        <a class="btn" href="#contacto">Quiero evaluar mi crédito</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAYOREO -->
+  <section id="mayoreo" class="section">
+    <div class="wrap">
+      <h2>Mayoreo para negocios que quieren rotación</h2>
+      <p class="muted">Recargas electrónicas y accesorios con salida constante: fundas, micas, cargadores, audífonos y más.</p>
+      <div class="grid-3">
+        <div class="card card-inner">
+          <h3>Recargas</h3>
+          <p class="muted">Paquetes para revender con márgenes reales.</p>
+        </div>
+        <div class="card card-inner">
+          <h3>Accesorios</h3>
+          <p class="muted">Mix equilibrado de alta y media rotación.</p>
+        </div>
+        <div class="card card-inner">
+          <h3>Abasto constante</h3>
+          <p class="muted">Reposición semanal y combos por volumen.</p>
+        </div>
+      </div>
+      <div style="margin-top:14px">
+        <a class="btn" href="#contacto">Solicitar lista de precios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS (OPCIONAL, MARKETING) -->
+  <section id="paquetes" class="section">
+    <div class="wrap">
+      <h2>Paquetes orientativos</h2>
+      <p class="muted">Ejemplos para comunicar valor. Ajustamos según tu caso.</p>
+      <div class="pricing">
+        <div class="card price-card">
+          <h3>Express</h3>
+          <div class="price">$499</div>
+          <p class="muted">Soluciones rápidas para fallas comunes.</p>
+        </div>
+        <div class="card price-card" style="border:2px solid var(--brand)">
+          <h3>Recomendado</h3>
+          <div class="price">$1,199</div>
+          <p class="muted">Optimización completa y servicio integral.</p>
+        </div>
+        <div class="card price-card">
+          <h3>Negocios</h3>
+          <div class="price">$—</div>
+          <p class="muted">Mayoreo de recargas y accesorios: cotización.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
+    <div class="wrap">
+      <h2>Contacto</h2>
+      <div class="contact">
+        <form class="card" action="#" method="POST" style="padding:18px">
+          <input class="input" name="nombre" placeholder="Nombre" required />
+          <div style="height:10px"></div>
+          <input class="input" type="email" name="email" placeholder="Email" required />
+          <div style="height:10px"></div>
+          <textarea class="input" name="mensaje" placeholder="Cuéntanos qué necesitas" required></textarea>
+          <div style="height:14px"></div>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+        <div class="card card-inner">
+          <h3>Planeta Celular</h3>
+          <p class="muted">
+            WhatsApp: <a href="https://wa.me/52XXXXXXXXXX" target="_blank" rel="noopener">+52 XX XXXX XXXX</a><br>
+            Email: <a href="mailto:planetacelular@email.com">planetacelular@email.com</a><br>
+            Ubicación: Zamora, Michoacán
+          </p>
+          <h3>Horarios</h3>
+          <p class="muted">Lun–Vie: 10:00–18:00 · Sáb: 10:00–14:00</p>
+          <h3>Redes</h3>
+          <p class="muted"><a href="#" target="_blank" rel="noopener">Facebook</a> · <a href="#" target="_blank" rel="noopener">Instagram</a> · <a href="#" target="_blank" rel="noopener">TikTok</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+      <span class="muted">© <span id="year"></span> Planeta Celular.</span>
+      <span class="muted"><a href="#" style="color:#9aa1ad">Aviso de privacidad</a></span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
