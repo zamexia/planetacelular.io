@@ -12,8 +12,10 @@
       --brand:#22c55e; --brand-2:#87f7a8; --accent:#60a5fa;
       --max:1120px; --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.35);
     }
-    *{box-sizing:border-box} body{margin:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:inherit; text-decoration:none} img{max-width:100%; display:block}
+    *{box-sizing:border-box}
+    html,body{margin:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif; max-width:100%; overflow-x:hidden}
+    a{color:inherit; text-decoration:none}
+    img{max-width:100%; display:block}
     .wrap{max-width:var(--max); margin:0 auto; padding:0 16px}
     .btn{display:inline-block; padding:12px 18px; border-radius:12px; background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#04130a; font-weight:800; box-shadow:var(--shadow)}
     .btn-outline{border:1px solid #263246; padding:11px 18px; border-radius:12px; color:var(--text)}
@@ -48,25 +50,25 @@
       .pricing{grid-template-columns:1fr}
       .contact{grid-template-columns:1fr}
     }
-
-    /* === AÑADIDOS === */
-    /* LOGO ASTRONAUTA + PLANETA */
     .logo-top{display:flex; align-items:center; gap:10px; font-weight:800}
-    .logo-top img{width:28px; height:28px}
-    /* Botones flotantes sociales */
+    .logo-top img{width:44px; height:44px}
     .floating-buttons{position:fixed; right:20px; bottom:20px; display:flex; flex-direction:column; gap:12px; z-index:1000}
     .floating-buttons a{width:54px; height:54px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:#121825; box-shadow:var(--shadow); transition:transform .2s}
     .floating-buttons a:hover{transform:scale(1.1)}
     .floating-buttons img{width:28px; height:28px}
+    @media (max-width: 600px){
+      .floating-buttons{right:12px; bottom:12px}
+      .floating-buttons a{width:48px; height:48px}
+      .floating-buttons img{width:24px; height:24px}
+      .logo-top img{width:52px; height:52px}
+    }
   </style>
 </head>
 <body>
-  <!-- NAV -->
   <header>
     <div class="wrap">
       <nav>
         <div style="display:flex; align-items:center; gap:10px; font-weight:800;">
-          <!-- agregado: astronauta + planeta -->
           <span class="logo-top">
             <img src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" alt="Astronauta"/>
             <img src="https://cdn-icons-png.flaticon.com/512/616/616658.png" alt="Planeta"/>
@@ -83,7 +85,6 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
@@ -103,7 +104,6 @@
     </div>
   </section>
 
-  <!-- REPARACIONES (PRINCIPAL) -->
   <section id="reparaciones" class="section">
     <div class="wrap">
       <h2>Reparaciones que devuelven la vida a tu equipo</h2>
@@ -120,7 +120,6 @@
     </div>
   </section>
 
-  <!-- CRÉDITO -->
   <section id="credito" class="section">
     <div class="wrap">
       <h2>Estrena hoy con pagos accesibles</h2>
@@ -145,7 +144,6 @@
     </div>
   </section>
 
-  <!-- MAYOREO -->
   <section id="mayoreo" class="section">
     <div class="wrap">
       <h2>Mayoreo para negocios que quieren rotación</h2>
@@ -170,62 +168,6 @@
     </div>
   </section>
 
-  <!-- PRECIOS (OPCIONAL, MARKETING) -->
-  <section id="paquetes" class="section">
-    <div class="wrap">
-      <h2>Paquetes orientativos</h2>
-      <p class="muted">Ejemplos para comunicar valor. Ajustamos según tu caso.</p>
-      <div class="pricing">
-        <div class="card price-card">
-          <h3>Express</h3>
-          <div class="price">$499</div>
-          <p class="muted">Soluciones rápidas para fallas comunes.</p>
-        </div>
-        <div class="card price-card" style="border:2px solid var(--brand)">
-          <h3>Recomendado</h3>
-          <div class="price">$1,199</div>
-          <p class="muted">Optimización completa y servicio integral.</p>
-        </div>
-        <div class="card price-card">
-          <h3>Negocios</h3>
-          <div class="price">$—</div>
-          <p class="muted">Mayoreo de recargas y accesorios: cotización.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contacto" class="section">
-    <div class="wrap">
-      <h2>Contacto</h2>
-      <div class="contact">
-        <form class="card" action="#" method="POST" style="padding:18px">
-          <input class="input" name="nombre" placeholder="Nombre" required />
-          <div style="height:10px"></div>
-          <input class="input" type="email" name="email" placeholder="Email" required />
-          <div style="height:10px"></div>
-          <textarea class="input" name="mensaje" placeholder="Cuéntanos qué necesitas" required></textarea>
-          <div style="height:14px"></div>
-          <button class="btn" type="submit">Enviar</button>
-        </form>
-        <div class="card card-inner">
-          <h3>Planeta Celular</h3>
-          <p class="muted">
-            WhatsApp: <a href="https://wa.me/52XXXXXXXXXX" target="_blank" rel="noopener">+52 XX XXXX XXXX</a><br>
-            Email: <a href="mailto:planetacelular@email.com">planetacelular@email.com</a><br>
-            Ubicación: Zamora, Michoacán
-          </p>
-          <h3>Horarios</h3>
-          <p class="muted">Lun–Vie: 10:00–18:00 · Sáb: 10:00–14:00</p>
-          <h3>Redes</h3>
-          <p class="muted"><a href="#" target="_blank" rel="noopener">Facebook</a> · <a href="#" target="_blank" rel="noopener">Instagram</a> · <a href="#" target="_blank" rel="noopener">TikTok</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOTONES FLOTANTES (agregados) -->
   <div class="floating-buttons">
     <a href="https://wa.me/message/VMCLAYE42WCKF1" target="_blank" rel="noopener" aria-label="WhatsApp">
       <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"/>
@@ -238,7 +180,6 @@
     </a>
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
       <span class="muted">© <span id="year"></span> Planeta Celular.</span>
